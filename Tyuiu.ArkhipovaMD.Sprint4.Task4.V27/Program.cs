@@ -1,13 +1,23 @@
 ﻿using Tyuiu.ArkhipovaMD.Sprint4.Task4.V27.Lib;
 
-DataService ds = new DataService();
-int[,] array = new int[5, 5];
-for (int i = 0; i < 5; i++)
+//DataService ds  = new DataService();
+//int[,] array = new int[5,5];
+//for (int i = 0; i < 5; i++)
+//{
+//    for (int j = 0; j < 5; j++)
+//    {
+//        array[i, j] = Convert.ToInt32(Console.ReadLine());
+//    }
+//}
+//Console.WriteLine(ds.Calculate(array));
+
+int resm = 0;
+for (int i = 0; i < 25; i++)
 {
-    for (int j = 0; j < 5; j++)
+    int u = Convert.ToInt32(Console.ReadLine());
+    if (u % 2 != 0)
     {
-        array[i, j] = Convert.ToInt32(Console.ReadLine());
+        resm += u;
     }
 }
-Console.WriteLine(ds.Calculate(array));
-
+Console.WriteLine(resm);
