@@ -1,23 +1,19 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint4;
-namespace Tyuiu.ArkhipovaMD.Sprint4.Task1.V3.Lib
+namespace Tyuiu.ArkhipovaMD.Sprint4.Task2.V27.Lib
 {
-    public class DataService : ISprint4Task1V3
+    public class DataService : ISprint4Task2V27
     {
-        public DataService()
-        {
-        }
-
         public int Calculate(int[] array)
         {
-            int resMul = 1;
+            int resSum = 0;
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] % 2 == 0)
                 {
-                    resMul *= array[i];
+                    resSum += array[i];
                 }
             }
-            return resMul;
+            return resSum;
         }
     }
 }
