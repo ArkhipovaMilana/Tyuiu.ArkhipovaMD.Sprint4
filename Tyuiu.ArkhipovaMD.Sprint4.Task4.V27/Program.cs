@@ -14,7 +14,6 @@
 int resm = 0;
 for (int i = 0;i < 25; i++)
 {
-
      int u = Convert.ToInt32(Console.ReadLine());
      if (u%2!= 0)
      {
